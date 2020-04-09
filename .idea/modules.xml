@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoSpace.iml" filepath="$PROJECT_DIR$/AutoSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_Explanatory basis/Chapter_Testng_Explanatory basis.iml" filepath="$PROJECT_DIR$/Chapter_Testng_Explanatory basis/Chapter_Testng_Explanatory basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" filepath="$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" />
+    </modules>
+  </component>
+</project>
