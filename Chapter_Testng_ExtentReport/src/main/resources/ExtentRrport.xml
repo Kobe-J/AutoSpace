@@ -12,7 +12,6 @@
         </classes>
     </test>
     <listeners>
-        <!--!<listener class-name="com.chapter.ExtentReport.ExtentTestNGIReporterListener"/>-->
-        <listener class-name="com.chapter.ExtentReport.ExtentTestNGIReporterListener"/>
+        <listener class-name="com.chapter.ExtentReport.ExtentTestNGIReporterListener"></listener>
     </listeners>
 </suite>
