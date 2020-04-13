@@ -1,6 +1,5 @@
 package com.chapter.ExtentReport;
 
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 

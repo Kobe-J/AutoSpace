@@ -15,6 +15,7 @@
     <modules>
         <module>Chapter_Testng_Explanatory basis</module>
         <module>Chapter_Testng_ExtentReport</module>
+        <module>Chapter_Testng_HttpClient</module>
     </modules>
 
 </project>

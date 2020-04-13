@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter_Testng_Explanatory basis" />
         <module name="Chapter_Testng_ExtentReport" />
+        <module name="Chapter_Testng_HttpClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="13">
       <module name="AutoSpace" target="13" />
       <module name="Chapter_Testng_Explanatory basis" target="13" />
       <module name="Chapter_Testng_ExtentReport" target="13" />
+      <module name="Chapter_Testng_HttpClient" target="13" />
     </bytecodeTargetLevel>
   </component>
 </project>
