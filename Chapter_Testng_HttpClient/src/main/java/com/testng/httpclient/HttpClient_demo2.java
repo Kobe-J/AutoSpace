@@ -27,21 +27,21 @@ public class HttpClient_demo2 {
     @Test
     public void test1() throws IOException {
         //声明测试接口路径
-        HttpGet get = new HttpGet(url);
-        //Httpclient初始化
-        DefaultHttpClient httpClient = new DefaultHttpClient();
-        //接受接口返回的信息
-        CloseableHttpResponse response =  httpClient.execute(get);
-        //返回的信息转字符串
-        String result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result);
-        //获取cookies信息
-        store = httpClient.getCookieStore();
-        System.out.println(store);
-        List<Cookie> cookieStores = store.getCookies();
-        for (Cookie cookie:cookieStores) {
-            System.out.println(cookie.getName());
-            System.out.println(cookie.getValue());
+            HttpGet get = new HttpGet(url);
+            //Httpclient初始化
+            DefaultHttpClient httpClient = new DefaultHttpClient();
+            //接受接口返回的信息
+            CloseableHttpResponse response =  httpClient.execute(get);
+            //返回的信息转字符串
+            String result = EntityUtils.toString(response.getEntity(),"utf-8");
+            System.out.println(result);
+            //获取cookies信息
+            store = httpClient.getCookieStore();
+            System.out.println(store);
+            List<Cookie> cookieStores = store.getCookies();
+            for (Cookie cookie:cookieStores) {
+                System.out.println(cookie.getName());
+                System.out.println(cookie.getValue());
         }
     }
 
