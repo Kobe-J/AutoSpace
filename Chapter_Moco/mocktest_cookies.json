@@ -5,11 +5,7 @@
     "method": "get",
     "uri": "/cookies/demoGet",
     "cookies": {
-      "login": "true"
-    },
-    "queries": {
-      "name": "admin",
-      "pwd": "admin"
+      "login": "login"
     }
   },
     "response": {

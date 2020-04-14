@@ -14,6 +14,9 @@
       "uri": "/redirect/test"
     },
   "response": {
+    "cookies": {
+      "login": "login"
+    },
     "json": {
       "return": "redirectTo is Success"
     }
