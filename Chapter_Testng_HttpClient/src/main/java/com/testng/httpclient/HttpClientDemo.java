@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 
-public class HttpClient_demo1 {
+public class HttpClientDemo {
     @Test
     public void demo1() throws IOException {
         String resulf;

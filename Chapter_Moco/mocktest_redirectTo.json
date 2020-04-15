@@ -15,7 +15,7 @@
     },
   "response": {
     "cookies": {
-      "login": "login"
+      "login": "true"
     },
     "json": {
       "return": "redirectTo is Success"

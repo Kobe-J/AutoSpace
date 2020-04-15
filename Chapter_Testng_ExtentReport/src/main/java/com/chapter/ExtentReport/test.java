@@ -1,5 +1,7 @@
 package com.chapter.ExtentReport;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class test {
     public static void main(String[] args)
     {
@@ -15,5 +17,8 @@ public class test {
 
         String q ="666";
         System.out.println(Integer.parseInt(q,16));
+
+        System.out.println(q.equals(a));
     }
+
 }

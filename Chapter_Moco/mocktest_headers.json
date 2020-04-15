@@ -32,14 +32,17 @@
       "Content-Type": "application/json"
     },
     "json": {
-      "id": 1,
-      "name": "admin"
+      "name": "admin",
+      "pwd": "admin"
     }
   },
   "response": {
     "json": {
-      "loc":"Post请求测试成功"
-
-    }    }
+      "loc":"Post请求测试成功",
+      "cookies": {
+        "kobe": "gigi"
+      }
+    }
+  }
 }
 ]
