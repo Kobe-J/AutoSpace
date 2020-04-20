@@ -51,8 +51,7 @@ public class HttpClientGet {
     @Test(dependsOnMethods = {"test1"})
     public void test2() throws IOException {
         HttpGet get = new HttpGet(bundle.getString("Cookies.Url"));
-        DefaultHttpClient client = new DefaultHttpClient();
-        client.setCookieStore(this.store);
+        CloseableHttpClient client = HttpClients.custom().setDefaultCookieStore(this.store).build();
         CloseableHttpResponse response = client.execute(get);
         String cookies = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(cookies);

@@ -3,13 +3,13 @@
 
     <test name = "suite_test">
         <classes>
-            <class name = "com.chapter.Explanatorybasis.TestNG_Suite"/>
-            <class name = "com.chapter.Explanatorybasis.Case.case_test1"/>
+            <class name = "com.chapter.springboot.Explanatorybasis.TestNG_Suite"/>
+            <class name = "com.chapter.springboot.Explanatorybasis.Case.case_test1"/>
         </classes>
 
         <classes>
-            <class name = "com.chapter.Explanatorybasis.TestNG_Suite"/>
-            <class name = "com.chapter.Explanatorybasis.Case.case_test2"/>
+            <class name = "com.chapter.springboot.Explanatorybasis.TestNG_Suite"/>
+            <class name = "com.chapter.springboot.Explanatorybasis.Case.case_test2"/>
         </classes>
     </test>
 
