@@ -2,10 +2,10 @@
 <suite name="group">
     <test name="group_tests">
         <classes>
-            <class name = "com.chapter.springboot.Explanatorybasis.group_stu.group_class1"/>
-            <class name = "com.chapter.springboot.Explanatorybasis.group_stu.group_class2"/>
-            <class name = "com.chapter.springboot.Explanatorybasis.group_stu.group_class3"/>
-            <class name = "com.chapter.springboot.Explanatorybasis.group_stu.group_class4"/>
+            <class name = "com.chapter.Explanatorybasis.group_stu.group_class1"/>
+            <class name = "com.chapter.Explanatorybasis.group_stu.group_class2"/>
+            <class name = "com.chapter.Explanatorybasis.group_stu.group_class3"/>
+            <class name = "com.chapter.Explanatorybasis.group_stu.group_class4"/>
         </classes>
         <groups>
             <run>

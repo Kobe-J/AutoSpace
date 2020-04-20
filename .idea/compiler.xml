@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter_Testng_Explanatory basis" />
-        <module name="Chapter_Testng_ExtentReport" />
         <module name="Chapter_SpringBoot" />
+        <module name="Chapter_Testng_ExtentReport" />
         <module name="Chapter_Testng_HttpClient" />
       </profile>
     </annotationProcessing>

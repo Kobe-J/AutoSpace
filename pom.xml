@@ -12,6 +12,7 @@
     <properties>
         <maven.compiler.source>13</maven.compiler.source>
         <maven.compiler.target>13</maven.compiler.target>
+        <swagger.vesion>2.6.1</swagger.vesion>
     </properties>
 
     <groupId>org.example</groupId>
@@ -24,5 +25,18 @@
         <module>Chapter_Testng_HttpClient</module>
         <module>Chapter_SpringBoot</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.vesion}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.vesion}</version>
+        </dependency>
+    </dependencies>
 
 </project>

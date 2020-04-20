@@ -2,7 +2,7 @@
 <suite name="Extent">
     <test name="extentReport">
         <classes>
-            <class name="com.chapter.springboot.ExtentReport.ExtentReport_test">
+            <class name="com.chapter.ExtentReport.ExtentReport_test">
                 <include name="case1"/>
                 <include name="case2"/>
                 <include name="case3"/>
@@ -12,6 +12,6 @@
         </classes>
     </test>
     <listeners>
-        <listener class-name="com.chapter.springboot.ExtentReport.ExtentTestNGIReporterListener"></listener>
+        <listener class-name="com.chapter.ExtentReport.ExtentTestNGIReporterListener"></listener>
     </listeners>
 </suite>
