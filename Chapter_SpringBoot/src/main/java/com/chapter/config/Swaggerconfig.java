@@ -20,7 +20,6 @@ public class Swaggerconfig {
     @Bean
     public Docket userRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("GET方法")  //模块名称
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.chapter.server"))  //扫描的控制器路径
@@ -32,8 +31,8 @@ public class Swaggerconfig {
         return new ApiInfoBuilder()
                 .title("接口文档标题")    //接口文档标题
                 .description("描述")   //描述
-                .contact(new Contact("Yxl的接口文档","URL","2215557239@qq.com"))    //作者  邮箱等
-                .version("版本号")  //版本号
+                .contact(new Contact("Yxl","http://www.baidu.com","2215557239@qq.com"))    //作者  邮箱等
+                .version("1.0.0")  //版本号
                 .build();
     }
 
