@@ -9,12 +9,14 @@
         <module name="Chapter_Testng_Explanatory basis" />
         <module name="Chapter_SpringBoot" />
         <module name="Chapter_Testng_ExtentReport" />
+        <module name="Chapter_Springboot_Mybatis" />
         <module name="Chapter_Testng_HttpClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="13">
       <module name="AutoSpace" target="13" />
       <module name="Chapter_SpringBoot" target="13" />
+      <module name="Chapter_Springboot_Mybatis" target="13" />
       <module name="Chapter_Testng_Explanatory basis" target="13" />
       <module name="Chapter_Testng_ExtentReport" target="13" />
       <module name="Chapter_Testng_HttpClient" target="13" />
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chapter_SpringBoot" options="-parameters" />
+      <module name="Chapter_Springboot_Mybatis" options="-parameters" />
       <module name="Chapter_Testng_Explanatory basis" options="-parameters" />
       <module name="Chapter_Testng_ExtentReport" options="-parameters" />
       <module name="Chapter_Testng_HttpClient" options="-parameters" />
