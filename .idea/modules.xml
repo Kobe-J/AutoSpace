@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/AutoSpace.iml" filepath="$PROJECT_DIR$/AutoSpace.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" filepath="$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" filepath="$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_Explanatory basis/Chapter_Testng_Explanatory basis.iml" filepath="$PROJECT_DIR$/Chapter_Testng_Explanatory basis/Chapter_Testng_Explanatory basis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" filepath="$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_HttpClient/Chapter_Testng_HttpClient.iml" filepath="$PROJECT_DIR$/Chapter_Testng_HttpClient/Chapter_Testng_HttpClient.iml" />
     </modules>

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+//springboot mybatis 单表增删改查
 @RestController
 @Api(value = "Dept",description = "First spring mybatis 增删改查")
 @RequestMapping("dept")
@@ -52,5 +52,4 @@ public class Controller {
     public List<DeptUser> findone(@RequestParam int deptno){
         return sqlSessionTemplate.selectList("findone",deptno);
     }
-
 }
