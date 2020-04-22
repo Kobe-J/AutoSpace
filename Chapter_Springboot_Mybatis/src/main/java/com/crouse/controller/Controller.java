@@ -12,7 +12,7 @@ import java.util.List;
 
 
 @RestController
-@Api(value = "Dept",description = "First mybatis")
+@Api(value = "Dept",description = "First spring mybatis 增删改查")
 @RequestMapping("dept")
 public class Controller {
     //获取 执行sql 的对象 SqlSessionTemplate
