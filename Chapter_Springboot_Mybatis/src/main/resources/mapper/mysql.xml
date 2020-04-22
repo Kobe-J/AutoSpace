@@ -16,4 +16,7 @@
 
     <delete id="del" parameterType="Integer">
                 delete from dept where deptno = #{deptno}</delete>
+
+    <select id="findone" resultType="com.crouse.model.DeptUser">
+                select  * from dept where deptno=#{deptno}</select>
 </mapper>

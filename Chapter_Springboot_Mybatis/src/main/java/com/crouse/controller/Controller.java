@@ -27,11 +27,7 @@ public class Controller {
 
     @RequestMapping(value = "/selectAll",method = RequestMethod.GET)
     @ApiOperation(value = "查询所有用户信息",httpMethod = "GET")
-    public List<DeptUser> selectAll (){
-        List<DeptUser> d =  sqlSessionTemplate.selectList("findAll");
-        System.out.println(d);
-        return d;
-    }
+    public List<DeptUser> selectAll (){ List<DeptUser> d =  sqlSessionTemplate.selectList("findAll");return d; }
 
     @RequestMapping(value = "/insert",method = RequestMethod.POST)
     @ApiOperation(value = "添加用户",httpMethod = "POST")
@@ -39,15 +35,22 @@ public class Controller {
         return sqlSessionTemplate.insert("insertUser",deptUser);
     }
 
-    @RequestMapping(value = "update",method = RequestMethod.POST)
+    @RequestMapping(value = "/update",method = RequestMethod.POST)
     @ApiOperation(value ="修改用户信息",httpMethod = "POST")
     public int update(@RequestBody DeptUser deptUser){
         return sqlSessionTemplate.update("upUser",deptUser);
     }
 
-    @RequestMapping(value = "del",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/del",method = RequestMethod.DELETE)
     @ApiOperation(value = "删除用户",httpMethod = "DELETE")
     public int del(@RequestParam int deptno){
         return sqlSessionTemplate.delete("del",deptno);
     }
+
+    @RequestMapping(value = "/findone",method = RequestMethod.GET)
+    @ApiOperation(value="查询一个用户信息",httpMethod = "GET")
+    public List<DeptUser> findone(@RequestParam int deptno){
+        return sqlSessionTemplate.selectList("findone",deptno);
+    }
+
 }
