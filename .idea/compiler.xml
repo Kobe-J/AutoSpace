@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter_SpringBoot" />
-        <module name="Chapter_Testng_ExtentReport" />
-        <module name="Chapter_Springboot_Mybatis" />
+        <module name="Chapter_Testng_Explanatorybasis" />
+        <module name="Chapter_Interface_automation" />
         <module name="Chapter_Testng_HttpClient" />
+        <module name="Chapter_Testng_ExtentReport" />
+        <module name="Chapter_SpringBoot" />
+        <module name="Chapter_Springboot_Mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="13">
       <module name="AutoSpace" target="13" />
+      <module name="Chapter_Interface_automation" target="13" />
       <module name="Chapter_SpringBoot" target="13" />
       <module name="Chapter_Springboot_Mybatis" target="13" />
       <module name="Chapter_Testng_Explanatorybasis" target="13" />
@@ -23,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter_Interface_automation" options="-parameters" />
       <module name="Chapter_SpringBoot" options="-parameters" />
       <module name="Chapter_Springboot_Mybatis" options="-parameters" />
       <module name="Chapter_Testng_Explanatorybasis" options="-parameters" />

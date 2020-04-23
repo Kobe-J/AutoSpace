@@ -1,7 +1,5 @@
 package com.chapter.Explanatorybasis;
 
-
-
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 /**
@@ -17,5 +15,4 @@ public class TestNG_Suite {
     public void after(){
         System.out.println("suite is stop");
     }
-
 }

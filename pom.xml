@@ -25,6 +25,7 @@
         <module>Chapter_Testng_HttpClient</module>
         <module>Chapter_SpringBoot</module>
         <module>Chapter_Springboot_Mybatis</module>
+        <module>Chapter_Interface_automation</module>
     </modules>
 
     <dependencies>
