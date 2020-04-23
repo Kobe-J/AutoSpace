@@ -8,6 +8,7 @@ import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -57,10 +58,9 @@ public class LoginTest {
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
 
-
-
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
+
         //处理结果，就是判断返回结果是否符合预期
         Assert.assertEquals(loginCase.getExpected(),result);
 
@@ -87,7 +87,7 @@ public class LoginTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
-        //TestConfig.store = HttpClients.custom().setDefaultCookieStore(this.)
+        //待完善 拿到cookies信息
         return result;
     }
 
