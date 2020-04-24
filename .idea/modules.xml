@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AutoSpace.iml" filepath="$PROJECT_DIR$/AutoSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_AutoSpace/Chapter_AutoSpace.iml" filepath="$PROJECT_DIR$/Chapter_AutoSpace/Chapter_AutoSpace.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_Interface_automation/Chapter_Interface_automation.iml" filepath="$PROJECT_DIR$/Chapter_Interface_automation/Chapter_Interface_automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" filepath="$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" filepath="$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" />
