@@ -116,11 +116,11 @@
       "uri":"/addUser",
       "method":"post",
       "json":{
-        "userName":"zhao9",
-        "password":"zhaozhao",
-        "sex":"0",
-        "age":"35",
-        "permission":"1",
+        "userName":"yaoxilong",
+        "password":"123456",
+        "sex":"1",
+        "age":"23",
+        "permission":"0",
         "isDelete":"0"
       },
       "cookies":{

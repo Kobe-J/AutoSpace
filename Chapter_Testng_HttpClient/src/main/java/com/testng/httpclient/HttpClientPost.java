@@ -61,7 +61,7 @@ public class HttpClientPost {
         StringEntity parm = new StringEntity(jsonObject.toString(), "utf-8");
         post.setEntity(parm);
         CloseableHttpResponse response = httpClient.execute(post);
-        String resulf = EntityUtils.toString(response.getEntity());
+        String resulf = EntityUtils.toString(response.getEntity(),"utf-8");
         JSONObject responseJson = new JSONObject(resulf);
         System.out.println(responseJson);
         JSONObject js = (JSONObject) responseJson.get("cookies");

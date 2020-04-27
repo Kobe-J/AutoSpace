@@ -6,9 +6,12 @@ import com.tester.model.LoginCase;
 import com.tester.utils.ConfigFile;
 import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -18,31 +21,30 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 public class LoginTest {
 
 
     @BeforeTest(groups = "loginTrue",description = "测试准备工作,获取HttpClient对象")
     public void beforeTest(){
-        TestConfig.defaultHttpClient =  HttpClients.custom().build();
         TestConfig.getUserInfoUrl = ConfigFile.getUrl(InterfaceName.GETUSERINFO);
         TestConfig.getUserListUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
         TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
         TestConfig.addUserUrl = ConfigFile.getUrl(InterfaceName.ADDUSERINFO);
+        TestConfig.store = new BasicCookieStore();
+        TestConfig.defaultHttpClient =HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
     }
 
-
-
-
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
-    public void loginTrue() throws IOException {
+    public void loginTrue() throws IOException, InterruptedException {
 
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",1);
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
-
+        Thread.sleep(3000);
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
@@ -52,25 +54,22 @@ public class LoginTest {
     }
 
     @Test(description = "用户登陆失败接口")
-    public void loginFalse() throws IOException {
+    public void loginFalse() throws IOException, InterruptedException {
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",2);
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
-
+        Thread.sleep(3000);
         //下边的代码为写完接口的测试代码
         String result = getResult(loginCase);
-
         //处理结果，就是判断返回结果是否符合预期
-        Assert.assertEquals(loginCase.getExpected(),result);
-
+        Assert.assertEquals(loginCase.getExpected(),"true");
     }
 
 
 
 
     private String getResult(LoginCase loginCase) throws IOException {
-        //下边的代码为写完接口的测试代码
         HttpPost post = new HttpPost(TestConfig.loginUrl);
         JSONObject param = new JSONObject();
         param.put("userName",loginCase.getUserName());
@@ -87,7 +86,8 @@ public class LoginTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
-        //待完善 拿到cookies信息
+        //拿到cookies信息
+        System.out.println(TestConfig.store);
         return result;
     }
 
