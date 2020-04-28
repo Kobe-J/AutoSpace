@@ -49,8 +49,6 @@ public class LoginTest {
         String result = getResult(loginCase);
         //处理结果，就是判断返回结果是否符合预期
         Assert.assertEquals(loginCase.getExpected(),result);
-
-
     }
 
     @Test(description = "用户登陆失败接口")

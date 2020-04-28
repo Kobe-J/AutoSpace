@@ -2,7 +2,6 @@ package com.tester.cases;
 
 import com.tester.config.TestConfig;
 import com.tester.model.GetUserInfoCase;
-import com.tester.model.GetUserListCase;
 import com.tester.model.User;
 import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
@@ -18,7 +17,6 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class GetUserInfoTest {
@@ -30,15 +28,8 @@ public class GetUserInfoTest {
         GetUserInfoCase getUserInfoCase = session.selectOne("getUserInfoCase",1);
         System.out.println(getUserInfoCase.toString());
         System.out.println(TestConfig.getUserInfoUrl);
-
-
-
         //下边为写完接口的代码
         JSONArray resultJson = getJsonResult(getUserInfoCase);
-
-        /**
-         * 下边三行可以先讲
-         */
         Thread.sleep(2000);
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);
         System.out.println("自己查库获取用户信息:"+user.toString());
@@ -51,18 +42,17 @@ public class GetUserInfoTest {
         Assert.assertEquals(jsonArray,resultJson);
     }
 
-
     private JSONArray getJsonResult(GetUserInfoCase getUserInfoCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.getUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("id",getUserInfoCase.getUserId());
+        param.put("userId",getUserInfoCase.getUserId());
         //设置请求头信息 设置header
         post.setHeader("content-type","application/json");
         //将参数信息添加到方法中
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
         //设置cookies
-        HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
+        TestConfig.defaultHttpClient = HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
         //声明一个对象来进行响应结果的存储
         String result;
         //执行post方法
@@ -70,10 +60,11 @@ public class GetUserInfoTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println("调用接口result:"+result);
-        List resultList = Arrays.asList(result);
+        List resultList = new ArrayList();
+        resultList.add(result);
+        System.out.println(resultList);
         JSONArray array = new JSONArray(resultList);
-        System.out.println(array.toString());
+        System.out.println(array);
         return array;
-
     }
 }

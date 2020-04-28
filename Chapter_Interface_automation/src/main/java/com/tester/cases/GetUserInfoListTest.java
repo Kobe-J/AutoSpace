@@ -31,9 +31,6 @@ public class GetUserInfoListTest {
         System.out.println(TestConfig.getUserListUrl);
         //下边为写完接口的代码
         JSONArray resultJson = getJsonResult(getUserListCase);
-        /**
-         * 可以先讲
-         */
         Thread.sleep(2000);
         List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);
         for(User u : userList){
@@ -63,7 +60,7 @@ public class GetUserInfoListTest {
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
         //设置cookies
-        //HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
+        TestConfig.defaultHttpClient=HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
         //声明一个对象来进行响应结果的存储
         String result;
         //执行post方法

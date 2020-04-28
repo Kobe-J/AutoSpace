@@ -46,7 +46,7 @@
       "uri":"/getUserInfo",
       "method":"post",
       "json":{
-        "userId":"1"
+        "userId":1
       },
       "cookies":{
         "login":"true"
@@ -120,7 +120,6 @@
         "password":"123456",
         "sex":"1",
         "age":"23",
-        "permission":"0",
         "isDelete":"0"
       },
       "cookies":{

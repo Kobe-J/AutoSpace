@@ -24,20 +24,10 @@ public class UpdateUserInfoTest {
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase",1);
         System.out.println(updateUserInfoCase.toString());
         System.out.println(TestConfig.updateUserInfoUrl);
-
-
-        //下边为写完接口的代码
         int result = getResult(updateUserInfoCase);
-        /**
-         * 下边这两行跟着测试的课讲
-         */
-        //获取更新后的结果
         Thread.sleep(2000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
-
-
-
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
 
@@ -49,23 +39,14 @@ public class UpdateUserInfoTest {
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase",2);
         System.out.println(updateUserInfoCase.toString());
         System.out.println(TestConfig.updateUserInfoUrl);
-
-
-        //下边为写完接口的代码
+        //下边为完整的接口的代码
         int result = getResult(updateUserInfoCase);
-
-        /**
-         * 下边这两行跟着测试的课讲
-         */
         Thread.sleep(2000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
-
-
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
     }
-
 
     private int getResult(UpdateUserInfoCase updateUserInfoCase) throws IOException {
         HttpPost post = new HttpPost(TestConfig.updateUserInfoUrl);
@@ -82,7 +63,7 @@ public class UpdateUserInfoTest {
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
         //设置cookies
-        HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
+        TestConfig.defaultHttpClient=HttpClients.custom().setDefaultCookieStore(TestConfig.store).build();
         //声明一个对象来进行响应结果的存储
         String result;
         //执行post方法

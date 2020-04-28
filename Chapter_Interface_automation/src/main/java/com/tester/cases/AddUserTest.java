@@ -27,7 +27,6 @@ public class AddUserTest {
         System.out.println(addUserCase.toString());
         System.out.println(TestConfig.addUserUrl);
         Thread.sleep(3000);
-        System.out.println(TestConfig.store);
         //接口的测试代码
         String result = getResult(addUserCase);
         //查询用户看是否添加成功
