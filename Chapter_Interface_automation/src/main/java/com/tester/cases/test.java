@@ -10,6 +10,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
@@ -33,6 +34,7 @@ public class test {
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
     }
 
+    //CloseableHttpClient
     @Test
     public void test1() throws IOException {
         TestConfig.store = new BasicCookieStore();
@@ -52,6 +54,7 @@ public class test {
         System.out.println(cookies);
     }
 
+    //DefaultHttpClient
     @Test
     public void test2() throws IOException {
         HttpPost post = new HttpPost(TestConfig.loginUrl);
@@ -69,4 +72,10 @@ public class test {
         System.out.println(TestConfig.store);
         System.out.println(result);
     }
+
+    @Test
+    public static void main() {
+        System.out.println("aaaaaaaaaaaaaaaaaaaaa");
+    }
+
 }

@@ -7,7 +7,6 @@ import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -34,8 +33,6 @@ public class AddUserTest {
         System.out.println(user.toString());
         //判断返回结果是否符合预期
         Assert.assertEquals(addUserCase.getExpected(),result);
-
-
     }
 
 
