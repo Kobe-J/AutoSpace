@@ -6,12 +6,9 @@ import com.tester.model.LoginCase;
 import com.tester.utils.ConfigFile;
 import com.tester.utils.DatabaseUtil;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.cookie.Cookie;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -21,13 +18,13 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.util.List;
+
 
 public class LoginTest {
 
 
     @BeforeTest(groups = "loginTrue",description = "测试准备工作,获取HttpClient对象")
-    public void beforeTest(){
+    public void beforeTest() {
         TestConfig.getUserInfoUrl = ConfigFile.getUrl(InterfaceName.GETUSERINFO);
         TestConfig.getUserListUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
@@ -39,7 +36,6 @@ public class LoginTest {
 
     @Test(groups = "loginTrue",description = "用户成功登陆接口")
     public void loginTrue() throws IOException, InterruptedException {
-
         SqlSession session = DatabaseUtil.getSqlSession();
         LoginCase loginCase = session.selectOne("loginCase",1);
         System.out.println(loginCase.toString());
@@ -77,7 +73,7 @@ public class LoginTest {
         //将参数信息添加到方法中
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
-        //声明一个对象来进行响应结果的存储
+        //响应结果的存储
         String result;
         //执行post方法
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
@@ -88,6 +84,4 @@ public class LoginTest {
         System.out.println(TestConfig.store);
         return result;
     }
-
-
 }
