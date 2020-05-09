@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter_Testng_Explanatorybasis" />
-        <module name="Chapter_Interface_automation" />
         <module name="Chapter_AutoSpace" />
+        <module name="Chapter_Interface_automation" />
         <module name="Chapter_Testng_HttpClient" />
         <module name="Chapter_Testng_ExtentReport" />
         <module name="Chapter_SpringBoot" />
@@ -28,7 +28,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Chapter_AutoSpace" options="-parameters -extdirs C:\Users\EDZ\Desktop\AutoSpace\Chapter_AutoSpace/lib" />
+      <module name="Chapter_AutoSpace" options="-parameters -extdirs C:\Users\EDZ\Desktop\AutoSpace\Chapter_AutoSpace/lib --add-exports java.base/sun.security.ssl=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.sjavac=ALL-UNNAMED" />
       <module name="Chapter_Interface_automation" options="-parameters" />
       <module name="Chapter_SpringBoot" options="-parameters" />
       <module name="Chapter_Springboot_Mybatis" options="-parameters" />

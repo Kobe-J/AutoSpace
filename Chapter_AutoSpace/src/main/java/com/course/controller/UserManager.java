@@ -14,10 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Objects;
 
+import static com.sun.tools.sjavac.Log.info;
+
 
 @RestController
 @Api(value = "v1",description = "用户管理系统")
 @RequestMapping("v1")
+@Log4j
 public class UserManager {
     //首先获取一个执行sql语句的对象
     @Autowired
@@ -27,26 +30,27 @@ public class UserManager {
 
     @ApiOperation(value = "登陆接口",httpMethod = "POST")
     @RequestMapping(value = "/login",method = RequestMethod.POST)
-    public Boolean login(HttpServletResponse response, @RequestBody User user){
+    public Boolean login(HttpServletResponse response, @RequestBody(required = false) User user){
         int i  = template.selectOne("login",user);
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
-        //info("查看到的结果是"+i);
+        //info("查看到的结果是: "+i);
         if(i==1){
             return true;
         }
         return false;
     }
+
     @ApiOperation(value = "添加用户接口",httpMethod = "POST")
     @RequestMapping(value = "/addUser",method = RequestMethod.POST)
-    public boolean addUser(HttpServletRequest request,@RequestBody User user){
+    public boolean addUser(HttpServletRequest request,@RequestBody (required = false)User user){
         Boolean x = verifyCookies(request);
         int result = 0;
         if(x != null){
             result = template.insert("addUser",user);
         }
         if(result>0){
-            //info("添加用户的数量是:"+result);
+           // info("添加用户的数量是:"+result);
             return true;
         }
         return false;

@@ -7,10 +7,10 @@ public class User {
     private int id;
     private String userName;
     private String password;
-    private String age;
-    private String sex;
-    private String permission;
-    private String isDelete;
+    private int age;
+    private int sex;
+    private int permission;
+    private int isDelete;
 
     public int getId() {
         return id;
@@ -36,35 +36,36 @@ public class User {
         this.password = password;
     }
 
-    public String getAge() {
+
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public String getSex() {
+    public int getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(int sex) {
         this.sex = sex;
     }
 
-    public String getPermission() {
+    public int getPermission() {
         return permission;
     }
 
-    public void setPermission(String permission) {
+    public void setPermission(int permission) {
         this.permission = permission;
     }
 
-    public String getIsDelete() {
+    public int getIsDelete() {
         return isDelete;
     }
 
-    public void setIsDelete(String isDelete) {
+    public void setIsDelete(int isDelete) {
         this.isDelete = isDelete;
     }
 
