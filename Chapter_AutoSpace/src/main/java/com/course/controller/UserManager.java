@@ -18,7 +18,6 @@ import java.util.Objects;
 @RestController
 @Api(value = "v1",description = "用户管理系统")
 @RequestMapping("v1")
-@Log4j
 public class UserManager {
     //首先获取一个执行sql语句的对象
     @Autowired
