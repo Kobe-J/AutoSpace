@@ -20,6 +20,13 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 
+
+/**
+ * @Date 2020.2.29
+ * @Auto yxl
+ * 获取用户列表信息接口自动化
+ * */
+
 public class LoginTest {
 
 
@@ -41,9 +48,9 @@ public class LoginTest {
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
         Thread.sleep(3000);
-        //下边的代码为写完接口的测试代码
+        //接口的测试代码
         String result = getResult(loginCase);
-        //处理结果，就是判断返回结果是否符合预期
+        //处理结果，判断返回结果是否符合预期
         Assert.assertEquals(loginCase.getExpected(),result);
     }
 
@@ -54,9 +61,9 @@ public class LoginTest {
         System.out.println(loginCase.toString());
         System.out.println(TestConfig.loginUrl);
         Thread.sleep(3000);
-        //下边的代码为写完接口的测试代码
+        //接口的测试代码
         String result = getResult(loginCase);
-        //处理结果，就是判断返回结果是否符合预期
+        //处理结果，判断返回结果是否符合预期
         Assert.assertEquals(loginCase.getExpected(),"true");
     }
 

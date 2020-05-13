@@ -19,6 +19,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * @Date 2020.3.2
+ * @Auto yxl
+ * 获取用户信息接口自动化
+ * */
 public class GetUserInfoTest {
 
 
@@ -28,7 +34,7 @@ public class GetUserInfoTest {
         GetUserInfoCase getUserInfoCase = session.selectOne("getUserInfoCase",1);
         System.out.println(getUserInfoCase.toString());
         System.out.println(TestConfig.getUserInfoUrl);
-        //下边为写完接口的代码
+        //接口的代码
         JSONArray resultJson = getJsonResult(getUserInfoCase);
         Thread.sleep(2000);
         User user = session.selectOne(getUserInfoCase.getExpected(),getUserInfoCase);

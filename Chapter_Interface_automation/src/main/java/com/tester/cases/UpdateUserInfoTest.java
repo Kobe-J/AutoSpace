@@ -16,6 +16,11 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+/**
+ * @Date 2020.3.2
+ * @Auto yxl
+ * 修改用户信息接口自动化
+ * */
 public class UpdateUserInfoTest {
 
     @Test(dependsOnGroups = "loginTrue",description = "更改用户信息")
@@ -39,7 +44,7 @@ public class UpdateUserInfoTest {
         UpdateUserInfoCase updateUserInfoCase = session.selectOne("updateUserInfoCase",2);
         System.out.println(updateUserInfoCase.toString());
         System.out.println(TestConfig.updateUserInfoUrl);
-        //下边为完整的接口的代码
+        //接口的代码
         int result = getResult(updateUserInfoCase);
         Thread.sleep(2000);
         User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);

@@ -1,10 +1,8 @@
 package com.tester.config;
 
 import lombok.Data;
-import org.apache.http.Header;
 import org.apache.http.client.CookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 
 
 @Data

@@ -18,6 +18,12 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * @Date 2020.3.2
+ * @Auto yxl
+ * 获取用户列表信息接口自动化
+ * */
+
 public class GetUserInfoListTest {
 
 
@@ -29,7 +35,7 @@ public class GetUserInfoListTest {
         GetUserListCase getUserListCase = session.selectOne("getUserListCase",1);
         System.out.println(getUserListCase.toString());
         System.out.println(TestConfig.getUserListUrl);
-        //下边为写完接口的代码
+        //接口的代码
         JSONArray resultJson = getJsonResult(getUserListCase);
         Thread.sleep(2000);
         List<User> userList = session.selectList(getUserListCase.getExpected(),getUserListCase);

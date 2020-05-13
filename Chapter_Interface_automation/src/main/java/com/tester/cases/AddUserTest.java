@@ -15,6 +15,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
+/**
+ * @Date 2020.3.1
+ * @Auto yxl
+ * 添加用户接口自动化
+ * */
+
 public class AddUserTest {
 
 
@@ -27,7 +33,7 @@ public class AddUserTest {
         Thread.sleep(3000);
         //接口的测试代码
         String result = getResult(addUserCase);
-        //查询用户看是否添加成功
+        //查询用户是否添加成功
         Thread.sleep(2000);
         User user = session.selectOne("addUser",addUserCase);
         System.out.println(user.toString());
@@ -37,7 +43,7 @@ public class AddUserTest {
 
 
     private String getResult(AddUserCase addUserCase) throws IOException {
-        //下边的代码为写完接口的测试代码
+        //接口的测试代码
         HttpPost post = new HttpPost(TestConfig.addUserUrl);
         JSONObject param = new JSONObject();
         param.put("userName",addUserCase.getUserName());
