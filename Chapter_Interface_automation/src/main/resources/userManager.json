@@ -90,7 +90,6 @@
         "isDelete":"0"
       },
         {
-
           "id":"3",
           "userName":"wangwu",
           "password":"123456",
@@ -99,7 +98,6 @@
           "permission":"1",
           "isDelete":"0"
         },{
-
           "id":"5",
           "userName":"zhang1",
           "password":"123",
