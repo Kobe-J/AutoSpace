@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+logging:
+  path: logs
+  file: mylogs.log
+
+spring:
+  application:
+    name: myTest
+  datasource:
+    name:
+    url: jdbc:mysql://127.0.0.1:3306/yxl?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.crouse.model
+  mapper-locations:
+    - mapper/*
