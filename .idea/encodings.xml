@@ -3,18 +3,11 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_AutoSpace" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_AutoSpace/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_Interface_automation" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_Interface_automation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_SpringBoot" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_SpringBoot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_Springboot_Mybatis" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_Springboot_Mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_Testng_Explanatorybasis" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_Testng_Explanatorybasis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_Testng_ExtentReport" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_Testng_ExtentReport/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Chapter_Testng_HttpClient" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Chapter_Testng_HttpClient/src/main/java" charset="UTF-8" />
   </component>
 </project>
