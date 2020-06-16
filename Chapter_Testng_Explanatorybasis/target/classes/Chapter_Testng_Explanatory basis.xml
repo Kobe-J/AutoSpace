@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "suite">
+
+    <test name = "suite_test">
+        <classes>
+            <class name = "com.chapter.Explanatorybasis.TestNG_Suite"/>
+            <class name = "com.chapter.Explanatorybasis.Case.case_test1"/>
+        </classes>
+
+        <classes>
+            <class name = "com.chapter.Explanatorybasis.TestNG_Suite"/>
+            <class name = "com.chapter.Explanatorybasis.Case.case_test2"/>
+        </classes>
+    </test>
+
+</suite>
