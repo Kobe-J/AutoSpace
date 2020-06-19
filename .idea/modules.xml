@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AutoSpace.iml" filepath="$PROJECT_DIR$/AutoSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_AutoSpace/Chapter_AutoSpace.iml" filepath="$PROJECT_DIR$/Chapter_AutoSpace/Chapter_AutoSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Interface_automation/Chapter_Interface_automation.iml" filepath="$PROJECT_DIR$/Chapter_Interface_automation/Chapter_Interface_automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" filepath="$PROJECT_DIR$/Chapter_SpringBoot/Chapter_SpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" filepath="$PROJECT_DIR$/Chapter_Springboot_Mybatis/Chapter_Springboot_Mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_Explanatorybasis/Chapter_Testng_Explanatorybasis.iml" filepath="$PROJECT_DIR$/Chapter_Testng_Explanatorybasis/Chapter_Testng_Explanatorybasis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" filepath="$PROJECT_DIR$/Chapter_Testng_ExtentReport/Chapter_Testng_ExtentReport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_Testng_HttpClient/Chapter_Testng_HttpClient.iml" filepath="$PROJECT_DIR$/Chapter_Testng_HttpClient/Chapter_Testng_HttpClient.iml" />
+    </modules>
+  </component>
+</project>

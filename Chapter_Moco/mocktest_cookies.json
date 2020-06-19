@@ -1,0 +1,32 @@
+[
+  {
+  "description": "first get cookies request",
+  "request": {
+    "method": "get",
+    "uri": "/cookies/demoGet",
+    "cookies": {
+      "login": "login"
+    }
+  },
+    "response": {
+      "text": "This is a cookies get request"
+    }
+  },
+  {
+    "description": "first post cookies request",
+    "request": {
+      "method": "post",
+      "uri": "/cookies/demoPost",
+      "cookies": {
+        "login": "true"
+      },
+      "forms": {
+        "name": "admin",
+        "pwd": "admin"
+      }
+    },
+    "response": {
+      "text": "This is a cookies post request"
+    }
+  }
+]

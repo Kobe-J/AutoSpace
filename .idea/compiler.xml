@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Chapter_Testng_Explanatorybasis" />
+        <module name="Chapter_Interface_automation" />
+        <module name="Chapter_AutoSpace" />
+        <module name="Chapter_Testng_ExtentReport" />
+        <module name="Chapter_SpringBoot" />
+        <module name="Chapter_Springboot_Mybatis" />
+        <module name="Chapter_Testng_HttpClient" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="AutoSpace" target="1.8" />
+      <module name="Chapter_AutoSpace" target="1.8" />
+      <module name="Chapter_Interface_automation" target="1.8" />
+      <module name="Chapter_SpringBoot" target="1.8" />
+      <module name="Chapter_Springboot_Mybatis" target="1.8" />
+      <module name="Chapter_Testng_Explanatorybasis" target="1.8" />
+      <module name="Chapter_Testng_ExtentReport" target="1.8" />
+      <module name="Chapter_Testng_HttpClient" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter_AutoSpace" options="-parameters -extdirs D:\AutoSpace-master\AutoSpace-master\Chapter_AutoSpace/lib" />
+      <module name="Chapter_Interface_automation" options="-parameters" />
+      <module name="Chapter_SpringBoot" options="-parameters" />
+      <module name="Chapter_Springboot_Mybatis" options="-parameters" />
+      <module name="Chapter_Testng_Explanatorybasis" options="-parameters" />
+      <module name="Chapter_Testng_ExtentReport" options="-parameters" />
+      <module name="Chapter_Testng_HttpClient" options="-parameters" />
+    </option>
+  </component>
+</project>

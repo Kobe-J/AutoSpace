@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.6.RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <swagger.vesion>2.6.1</swagger.vesion>
+    </properties>
+
+    <groupId>org.example</groupId>
+    <artifactId>AutoSpace</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>Chapter_Testng_Explanatorybasis</module>
+        <module>Chapter_Testng_ExtentReport</module>
+        <module>Chapter_Testng_HttpClient</module>
+        <module>Chapter_SpringBoot</module>
+        <module>Chapter_Springboot_Mybatis</module>
+        <module>Chapter_Interface_automation</module>
+        <module>Chapter_AutoSpace</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.vesion}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.vesion}</version>
+        </dependency>
+    </dependencies>
+
+</project>

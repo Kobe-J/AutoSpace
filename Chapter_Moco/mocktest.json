@@ -1,0 +1,47 @@
+[
+
+    {
+    "description":"first get method",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get",
+      "queries": {
+        "username": "admin",
+        "pwd": "admin"
+      }
+    },
+      "response": {
+        "text": "get Login Success!!!!!"
+      }
+
+    },
+  {
+    "description":"second get method",
+    "request": {
+      "uri": "/getDemo1",
+      "method": "get",
+      "queries": {
+        "username": "admin",
+        "pwd": "admin"
+      }
+    },
+    "response": {
+      "text": " get Login Success"
+    }
+
+  },
+  {
+    "description": " post method",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post",
+      "forms": {
+        "username": "admin",
+        "pwd": "admin"
+      }
+    },
+    "response": {
+      "text": "post Login Success"
+    }
+  }
+]

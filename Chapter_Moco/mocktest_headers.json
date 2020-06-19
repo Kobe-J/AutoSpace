@@ -1,0 +1,48 @@
+[
+  {
+  "description": "this is a get cookies headers request",
+  "request": {
+    "uri": "/cookies/headers/demoGet",
+    "method": "get",
+    "cookies": {
+      "login": "true"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "json": {
+      "id": 1,
+      "name": "admin"
+    }
+  },
+    "response": {
+      "json": {
+        "loc":"Get请求测试成功"
+
+      }    }
+  },{
+  "description": "this is a post cookies headers request",
+  "request": {
+    "uri": "/cookies/headers/demoPost",
+    "method": "post",
+    "cookies": {
+      "login": "true"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "json": {
+      "name": "admin",
+      "pwd": "admin"
+    }
+  },
+  "response": {
+    "json": {
+      "loc":"Post请求测试成功",
+      "cookies": {
+        "kobe": "gigi"
+      }
+    }
+  }
+}
+]

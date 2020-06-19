@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Extent">
+    <test name="extentReport">
+        <classes>
+            <class name="com.chapter.ExtentReport.ExtentReport_test">
+                <include name="case1"/>
+                <include name="case2"/>
+                <include name="case3"/>
+                <include name="case4"/>
+                <include name="log"/>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.chapter.ExtentReport.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.crouse.controller">
+    <select id="findUser" resultType="int">
+                select count(*) from dept</select>
+
+    <select id="findAll" resultType="com.crouse.model.DeptUser">
+                select * from dept</select>
+
+    <insert id="insertUser" parameterType="com.crouse.model.DeptUser">
+                insert into dept (dname,loc) values (#{dname},#{loc})</insert>
+
+    <update id="upUser" parameterType="com.crouse.model.DeptUser">
+                update dept set dname=#{dname},loc=#{loc} where deptno=#{deptno}</update>
+
+    <delete id="del" parameterType="Integer">
+                delete from dept where deptno = #{deptno}</delete>
+
+    <select id="findone" resultType="com.crouse.model.DeptUser">
+                select  * from dept where deptno=#{deptno}</select>
+</mapper>

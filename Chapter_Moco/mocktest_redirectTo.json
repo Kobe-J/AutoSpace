@@ -1,0 +1,25 @@
+[
+  {
+  "description": "This is before redirectTo ",
+  "request": {
+    "method": "get",
+    "uri": "/redirect/demo"
+  },
+  "redirectTo": "/redirect/test"
+},
+  {
+    "description":"This is after redirectTo",
+    "request": {
+      "method": "get",
+      "uri": "/redirect/test"
+    },
+  "response": {
+    "cookies": {
+      "login": "true"
+    },
+    "json": {
+      "return": "redirectTo is Success"
+    }
+  }
+}
+]
