@@ -23,7 +23,7 @@
       <module name="Chapter_Springboot_Mybatis" target="1.8" />
       <module name="Chapter_Testng_Explanatorybasis" target="1.8" />
       <module name="Chapter_Testng_ExtentReport" target="1.8" />
-      <module name="Chapter_Testng_HttpClient" target="13" />
+      <module name="Chapter_Testng_HttpClient" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
