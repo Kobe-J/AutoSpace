@@ -28,7 +28,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Chapter_AutoSpace" options="-parameters -extdirs D:\AutoSpace-master\AutoSpace-master\Chapter_AutoSpace/lib" />
+      <module name="Chapter_AutoSpace" options="-parameters -extdirs D:\github\AutoSpace-master\Chapter_AutoSpace/lib" />
       <module name="Chapter_Interface_automation" options="-parameters" />
       <module name="Chapter_SpringBoot" options="-parameters" />
       <module name="Chapter_Springboot_Mybatis" options="-parameters" />

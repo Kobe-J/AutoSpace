@@ -17,7 +17,10 @@
     <artifactId>AutoSpace</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0517098ea4fd6b26ae412770e6af18f9a4ce34b
     <modules>
         <module>Chapter_Testng_Explanatorybasis</module>
         <module>Chapter_Testng_ExtentReport</module>
