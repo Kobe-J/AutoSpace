@@ -32,13 +32,6 @@
             <version>20160810</version>
         </dependency>
     </dependencies>
-<<<<<<< HEAD
-=======
-    <properties>
-        <maven.compiler.source>13</maven.compiler.source>
-        <maven.compiler.target>13</maven.compiler.target>
-    </properties>
->>>>>>> f0517098ea4fd6b26ae412770e6af18f9a4ce34b
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Chapter_Testng_HttpClient</artifactId>
