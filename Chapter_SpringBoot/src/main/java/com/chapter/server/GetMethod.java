@@ -24,8 +24,8 @@ public class GetMethod {
     public String demo(HttpServletResponse response){
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
-        System.out.println(cookie);
-        return "success";
+        System.out.print("cookie的name为："+cookie.getName()+"\n"+"cookie的value为："+cookie.getValue());
+        return "hello  word";
     }
 
 
