@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<GiftList>
+	<!-- 礼包 -->
+	<!-- 针对商城周抽奖宝箱:show_npc: 0不显示在NPC身上,1显示在NPC身上,默认为0  -->
+	<!-- 针对抽奖宝箱的礼包:is_fixed: 0 不是固定奖励,1为固定奖励,默认为0, 这个优先级高于weight,配置为固定奖励weight要设置为0-->
+	<!-- 针对抽奖宝箱的礼包:is_show:0不显示,1显示,默认为1 -->
+	<!-- 针对抽奖宝箱的礼包:broadcast:是否走马灯广播 0不显示,1显示,默认为0-->
+	<!-- 针对抽奖宝箱的礼包:当weight=0时,为不奖励,也不会发到客户端显示 -->
+	<!-- boy_id和girl_id配置为-1时，宝箱随到该项为空值不获得 -->
+	<!-- 显示在客户端的规范:
+		bool IsToClient()const
+		{
+			if (0 != m_is_show_npc)
+			{
+				return true;
+			}
+
+			if (0 != m_is_fixed)
+			{
+				return true;
+			}
+
+			if (0 != m_is_show)
+			{
+				return true;
+			}
+
+			return false;
+		}
+	-->
+	<Gift id="1">
+		<!-- min_num:最小数量, max_num:最大数量,在最小值和最大值之间随机一个数值, 必须保证大小顺序如果max_num比min_num小则为固定值min_num,,如果配置成一样的数值为固定值  -->
+		<reward type="item" boy_id="10001" girl_id="10001" min_num="50" max_num="100" weight="0" is_show="0"/>
+		<reward type="item" boy_id="0004000501" girl_id="1002001701" min_num="1" max_num="1" weight="0" is_show="0"/>
+		<reward type="item" boy_id="0005000401" girl_id="1003000801" min_num="5" max_num="10" weight="0" is_show="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num="300" max_num="300" weight="25" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="10" max_num="10" weight="25" is_show="1"/>
+	</Gift>
+	<Gift id="2">
+		<!-- 主线宝箱1【1月版本奖励】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="3">
+		<!-- 主线宝箱2【1月版本奖励】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="60000" max_num="60000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="4">
+		<!-- 主线宝箱3【1月版本奖励】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="80000" max_num="80000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="5">
+		<!-- 主线1-1首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "80000" max_num="80000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "50" max_num = "50" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="6">
+		<!-- 主线1-1普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "50" max_num = "50" weight="0" is_show="1" is_fixed="1"/>
+  </Gift>
+	<Gift id="7">
+		<!-- 主线1-1完美【1月版本奖励】 -->
+		<reward type="item" boy_id="0" girl_id="1008002601" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="8">
+		<!-- 主线1-2首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "85000" max_num="85000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="30000" max_num="30000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "80" max_num = "80" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="9">
+		<!-- 主线1-2普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "80" max_num = "80" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="10">
+		<!-- 主线1-2完美【1月版本奖励】 -->
+		<reward type="item" boy_id="0" girl_id="1001008801" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="1006003101" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="11">
+		<!-- 主线1-3首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="12">
+		<!-- 主线1-3普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="13">
+		<!-- 主线1-3完美【1月版本奖励】 -->
+		<reward type="item" boy_id="0" girl_id="1001050301" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="1011000301" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="14">
+		<!-- 主线1-4首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "120000" max_num="120000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="80000" max_num="80000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "240" max_num = "240" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="15">
+		<!-- 主线1-4普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "240" max_num = "240" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="16">
+		<!-- 主线1-4完美【1月版本奖励】 -->
+		<reward type="item" boy_id="0" girl_id="1001003301" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="17">
+		<!-- 主线1-5首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "150000" max_num="150000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "460" max_num = "460" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="18">
+		<!-- 主线1-5普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "460" max_num = "460" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="19">
+		<!-- 主线1-5完美【1月版本奖励】 -->
+		<reward type="item" boy_id="0" girl_id="1006005701" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="20">
+		<!-- 主线1-6首通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200000" max_num="200000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="21">
+		<!-- 主线1-6普通【1月版本奖励】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="22">
+		<!-- 主线1-6完美【1月版本奖励】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="23">
+		<!-- 专属通告测试奖励 -->
+		<reward type="item" boy_id="0" girl_id="1001008801" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="24">
+		<!-- 通告测试奖励 -->
+		<reward type="item" boy_id="0" girl_id="1001008801" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="1006003101" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="25">
+		<!-- 通告测试奖励 -->
+		<reward type="item" boy_id="0" girl_id="1008031701" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="26">
+		<!-- 明星位阶1阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001110801" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008123601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006104501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1013025901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="27">
+		<!-- 通告1001奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="28">
+		<!-- 通告1002奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="29">
+		<!-- 通告1003奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="30">
+		<!-- 通告1004奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="31">
+		<!-- 通告1005奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="32">
+		<!-- 通告1006奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="33">
+		<!-- 通告1007奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="34">
+		<!-- 通告1008奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="35">
+		<!-- 通告1009奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="36">
+		<!-- 通告1010奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="37">
+		<!-- 通告1011奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="38">
+		<!-- 通告1012奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="39">
+		<!-- 通告1013奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="40">
+		<!-- 通告1014奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="41">
+		<!-- 通告1015奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="42">
+		<!-- 通告1016奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="43">
+		<!-- 通告1017奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="44">
+		<!-- 通告1018奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="45">
+		<!-- 通告1019奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="46">
+		<!-- 通告1020奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="47">
+		<!-- 通告1021奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="48">
+		<!-- 通告1022奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="49">
+		<!-- 通告1023奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="50">
+		<!-- 通告1024奖励【2020.CE版本】 -->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="51">
+		<!-- 通告1奖励【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="52">
+		<!-- 通告2奖励【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="53">
+		<!-- 竞技场优胜宝箱1胜【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "3000" max_num = "3000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="54">
+		<!-- 竞技场优胜宝箱3胜【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "5000" max_num = "5000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="55">
+		<!-- 竞技场优胜宝箱3胜【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "8000" max_num = "8000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="56">
+		<!-- 主线第一章宝箱1奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001806701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "20000" max_num = "20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="57">
+		<!-- 主线第一章宝箱2奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1004806701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "25000" max_num = "25000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "150000" max_num="150000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="58">
+		<!-- 主线第一章宝箱3奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1006806701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "50000" max_num = "50000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "250000" max_num="250000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="59">
+		<!-- 主线第一章宝箱4奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008806701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1013806701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "80000" max_num = "80000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300000" max_num="300000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="60">
+		<!-- 通告3奖励【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "10000" max_num = "10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="61">
+		<!-- 通告4奖励【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "15000" max_num = "15000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="62">
+		<!-- 通告5奖励【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "20000" max_num = "20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="63">
+		<!-- 明星位阶2阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001104001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008117601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006098001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1009022601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="64">
+		<!-- 明星位阶3阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001810501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008810501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006810501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011810501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="65">
+		<!-- 明星位阶4阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001043101" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008049201" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006036701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011014001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="66">
+		<!-- 明星位阶5阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001809701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008809701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006809701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1009809701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="67">
+		<!-- 明星位阶6阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001812601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008812601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006812601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1009812601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1013812601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="68">
+		<!-- 明星位阶7阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001809901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008809901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006809901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011809901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1009809901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="69">
+		<!-- 明星位阶8阶奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001809501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008809501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006809501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1013809501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="70">
+		<!-- 主线1-1首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001021501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+
+	<Gift id="72">
+		<!-- 主线1-1完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001076301" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+
+	<Gift id="74">
+		<!-- 主线1-2普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008031201" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "6500" max_num="6500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="75">
+		<!-- 主线1-2完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1006069401" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="76">
+		<!-- 主线1-4首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1013020701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+
+	<Gift id="78">
+		<!-- 主线1-4完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1011032201" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="79">
+		<!-- 主线1-5首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1010019602" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+
+	<Gift id="81">
+		<!-- 主线1-5完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008086101" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="82">
+		<!-- 主线1-6首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001104901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="83">
+		<!-- 主线1-6普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001104901" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "8000" max_num="8000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="84">
+		<!-- 主线1-6完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001035001" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="85">
+		<!-- 主线1-7首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1006807201" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+
+	<Gift id="87">
+		<!-- 主线1-7完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1006028701" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="88">
+		<!-- 主线1-8首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008068301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="89">
+		<!-- 主线1-8普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008068301" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "8000" max_num="8000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+    </Gift>
+	<Gift id="90">
+		<!-- 主线1-8完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008031501" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="91">
+		<!-- 主线1-10首通【2020.CE版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200000" max_num="200000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="92">
+		<!-- 主线1-10普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001092201" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "8000" max_num="8000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+    </Gift>
+	<Gift id="93">
+		<!-- 主线1-10完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1011007801" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="94">
+		<!-- 测试礼包奖励 -->
+		<reward type="item" boy_id="0" girl_id="1001008801" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="1006003101" min_num = "1" max_num = "1" weight="50" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="95">
+		<!-- 通告-好感度阶段1奖励 -->
+		<reward type="item" boy_id="0" girl_id="1001811301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="96">
+		<!-- 通告-好感度阶段2奖励 -->
+		<reward type="item" boy_id="0" girl_id="1008811301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="97">
+		<!-- 通告-好感度阶段3奖励（Test） -->
+		<reward type="item" boy_id="0" girl_id="1006811301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="98">
+		<!-- 通告-好感度阶段4奖励（Test） -->
+		<reward type="item" boy_id="0" girl_id="1013811301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="99">
+		<!-- 通告-好感度阶段5奖励（Test） -->
+		<reward type="item" boy_id="0" girl_id="1010811301" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="100">
+		<!-- 主线第0章宝箱1奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001806601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "20000" max_num = "20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100000" max_num="100000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="101">
+		<!-- 主线第0章宝箱2奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1006806601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "25000" max_num = "25000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "150000" max_num="150000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="102">
+		<!-- 主线第0章宝箱3奖励【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008806601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "50000" max_num = "50000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "250000" max_num="250000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="103">
+		<!-- 主线0-1首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001035801" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008065601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006053701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="104">
+		<!-- 主线0-1普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001035801" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+  </Gift>
+	<Gift id="105">
+		<!-- 主线0-1完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008065601" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="106">
+		<!-- 主线0-3首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001090302" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008051901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011000701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="107">
+		<!-- 主线0-3普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001090302" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5400" max_num="5400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="108">
+		<!-- 主线0-3完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008051901" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="109">
+		<!-- 主线0-4首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1010005701" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "50000" max_num="50000" weight="0" is_show="1" is_fixed="1"/>
+	    <reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num="2000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="110">
+		<!-- 主线0-4普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1010005701" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5600" max_num="5600" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="111">
+		<!-- 主线0-4完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1012005601" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="112">
+		<!-- 主线0-5首通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001012101" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011005501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1012004801" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="113">
+		<!-- 主线0-5普通【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001012101" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5800" max_num="5800" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="114">
+		<!-- 主线0-5完美【2020.CE版本】 -->
+		<reward type="item" boy_id="0" girl_id="1011005501" min_num = "1" max_num = "1" weight="300" is_show="1" is_fixed="0"/>
+		<reward type="item" boy_id="-1" girl_id="-1" min_num="1" max_num="1" weight="700" is_show="0"/>
+	</Gift>
+	<Gift id="115">
+		<!-- 图鉴测试用礼包 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="300" max_num="300" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="116">
+		<!-- 金币礼包 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="117">
+		<!-- 成长任务等级礼包【1】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="118">
+		<!-- 成长任务等级礼包【2】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="119">
+		<!-- 成长任务等级礼包【3】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="120">
+		<!-- 成长任务等级礼包【4】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="121">
+		<!-- 成长任务等级礼包【4】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+    <!-- CBT版本配置 -->
+	<Gift id="1001001">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num="300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1001002">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num="500" max_num="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "2" max_num="2" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1001003">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num="800" max_num="800" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "3" max_num="3" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1001004">
+		<!-- 通用道具礼包 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1001005">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="920700001" girl_id="920700001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700002" girl_id="920700002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700003" girl_id="920700003" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700004" girl_id="920700004" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700005" girl_id="920700005" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700006" girl_id="920700006" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700007" girl_id="920700007" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700008" girl_id="920700008" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700009" girl_id="920700009" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700012" girl_id="920700012" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700013" girl_id="920700013" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700014" girl_id="920700014" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700015" girl_id="920700015" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001006">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960100001" min_num="1" max_num="1" weight="1"/>
+
+	</Gift>
+	<Gift id="1001007">
+		<!-- 通用道具礼包 -->
+	    <reward type="item" boy_id="0" girl_id="960100001" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001008">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001009">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200007" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200008" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200009" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200010" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200011" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001010">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num="2" max_num="2" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200007" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200008" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200009" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200010" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200011" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300003" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001012">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num="7" max_num="7" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num="7" max_num="7" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num="7" max_num="7" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num="7" max_num="7" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num="7" max_num="7" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200007" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200008" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200009" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200010" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200011" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300003" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001013">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960300001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300003" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+	<Gift id="1001014">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num="8" max_num="8" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num="8" max_num="8" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num="8" max_num="8" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num="8" max_num="8" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num="8" max_num="8" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200007" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200008" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200009" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200010" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960200011" min_num="3" max_num="3" weight="1"/>
+	    <reward type="item" boy_id="0" girl_id="960300001" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300002" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="0" girl_id="960300003" min_num="1" max_num="1" weight="1"/>
+
+	</Gift>
+		<Gift id="1001015">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="920700001" girl_id="920700001" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700002" girl_id="920700002" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700003" girl_id="920700003" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700004" girl_id="920700004" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700005" girl_id="920700005" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700006" girl_id="920700006" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700007" girl_id="920700007" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700008" girl_id="920700008" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700009" girl_id="920700009" min_num="5" max_num="5" weight="1"/>
+		<reward type="item" boy_id="920700012" girl_id="920700012" min_num="5" max_num="5" weight="1"/>
+	</Gift>
+	<Gift id="1001016">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="920700013" girl_id="920700013" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="920700014" girl_id="920700014" min_num="3" max_num="3" weight="1"/>
+		<reward type="item" boy_id="920700015" girl_id="920700015" min_num="3" max_num="3" weight="1"/>
+	</Gift>
+	<Gift id="1001017">
+		<!-- 通用道具礼包 -->
+		<reward type="item" boy_id="920700016" girl_id="920700016" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700017" girl_id="920700017" min_num="1" max_num="1" weight="1"/>
+		<reward type="item" boy_id="920700018" girl_id="920700018" min_num="1" max_num="1" weight="1"/>
+	</Gift>
+
+
+
+	<Gift id="1002001">
+		<!-- 掉落包ID占用 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="20000" max_num="20000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1003001">
+		<!-- 明星位阶1占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001102901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008116401" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006097001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1003002">
+		<!-- 明星位阶2占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001063102" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008069202" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006057202" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1013014402" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1003003">
+		<!-- 明星位阶3占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001079601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006072101" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1011033601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008090501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1003004">
+		<!-- 明星位阶4占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001104001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008117601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006098001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1009022601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1003005">
+		<!-- 明星位阶5占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001087202" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008097702" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006079102" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1012041002" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1003006">
+		<!-- 明星位阶6占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1011039601" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1001087001" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008097501" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006078901" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1012040801" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004001">
+		<!-- 通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004002">
+		<!-- 通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004003">
+		<!-- 通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004004">
+		<!-- 通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004005">
+		<!-- 威廉番外通告奖励1【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "35" max_num = "35" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004006">
+		<!-- 威廉番外通告奖励2【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "70" max_num = "70" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004007">
+		<!-- 威廉番外通告奖励3【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "100" max_num = "100" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004008">
+		<!-- 威廉番外通告奖励4【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004009">
+		<!-- 威廉番外通告奖励5【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "150" max_num = "150" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004010">
+		<!-- 劳伦特番外通告奖励1【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "35" max_num = "35" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004011">
+		<!-- 劳伦特番外通告奖励2【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "70" max_num = "70" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004012">
+		<!-- 劳伦特番外通告奖励3【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "100" max_num = "100" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004013">
+		<!-- 劳伦特番外通告奖励4【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004014">
+		<!-- 劳伦特番外通告奖励5【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "150" max_num = "150" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004015">
+		<!-- 达伦番外通告奖励1【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "35" max_num = "35" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004016">
+		<!-- 达伦番外通告奖励2【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "70" max_num = "70" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004017">
+		<!-- 达伦番外通告奖励3【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "100" max_num = "100" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004018">
+		<!-- 达伦番外通告奖励4【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004019">
+		<!-- 达伦番外通告奖励5【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "150" max_num = "150" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004020">
+		<!-- 拉克丝番外通告奖励1【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "35" max_num = "35" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004021">
+		<!-- 拉克丝番外通告奖励2【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "70" max_num = "70" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004022">
+		<!-- 拉克丝番外通告奖励3【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "100" max_num = "100" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004023">
+		<!-- 拉克丝番外通告奖励4【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004024">
+		<!-- 拉克丝番外通告奖励5【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "150" max_num = "150" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004025">
+		<!-- 阿塞尔番外通告奖励1【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "35" max_num = "35" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004026">
+		<!-- 阿塞尔番外通告奖励2【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "70" max_num = "70" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004027">
+		<!-- 阿塞尔番外通告奖励3【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "100" max_num = "100" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004028">
+		<!-- 阿塞尔番外通告奖励4【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "120" max_num = "120" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004029">
+		<!-- 阿塞尔番外通告奖励5【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "150" max_num = "150" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004030">
+		<!-- 威廉通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004031">
+		<!-- 威廉通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004032">
+		<!-- 威廉通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004033">
+		<!-- 威廉通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004034">
+		<!-- 劳伦特通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004035">
+		<!-- 劳伦特通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004036">
+		<!-- 劳伦特通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004037">
+		<!-- 劳伦特通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004038">
+		<!-- 达伦通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004039">
+		<!-- 达伦通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004040">
+		<!-- 达伦通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004041">
+		<!-- 达伦通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004042">
+		<!-- 阿塞尔通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004043">
+		<!-- 阿塞尔通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004044">
+		<!-- 阿塞尔通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004045">
+		<!-- 阿塞尔通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004046">
+		<!-- 拉克丝通告奖励青铜【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num="10000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004047">
+		<!-- 拉克丝通告奖励白银【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "12000" max_num="12000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004048">
+		<!-- 拉克丝通告奖励黄金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "15000" max_num="15000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004049">
+		<!-- 拉克丝通告奖励铂金【CBT版本】-->
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "12" max_num = "12" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num="20000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "8" max_num = "8" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004050">
+		<!-- 通告威廉好感度1级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920100014" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004051">
+		<!-- 通告威廉好感度2级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600092" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004052">
+		<!-- 通告威廉好感度3级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600093" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004053">
+		<!-- 通告威廉好感度4级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600095" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004054">
+		<!-- 通告威廉好感度5级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600094" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004055">
+		<!-- 通告劳伦特好感度1级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920100015" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004056">
+		<!-- 通告劳伦特好感度2级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600096" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004057">
+		<!-- 通告劳伦特好感度3级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600097" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004058">
+		<!-- 通告劳伦特好感度4级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600099" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004059">
+		<!-- 通告劳伦特好感度5级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600098" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004060">
+		<!-- 通告达伦好感度1级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920100016" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004061">
+		<!-- 通告达伦好感度2级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600101" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004062">
+		<!-- 通告达伦好感度3级奖励【CBT版本】-->
+			<reward type="item" boy_id="0" girl_id="920600100" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004063">
+		<!-- 通告达伦好感度4级奖励【CBT版本】-->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num="1000" max_num="1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004064">
+		<!-- 通告达伦好感度5级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600102" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004065">
+		<!-- 通告阿塞尔好感度1级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920100017" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004066">
+		<!-- 通告阿塞尔好感度2级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600103" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004067">
+		<!-- 通告阿塞尔好感度3级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600104" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004068">
+		<!-- 通告阿塞尔好感度4级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600106" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004069">
+		<!-- 通告阿塞尔好感度5级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600105" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004070">
+		<!-- 通告拉克丝好感度1级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920100018" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004071">
+		<!-- 通告拉克丝好感度2级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600107" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004072">
+		<!-- 通告拉克丝好感度3级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600108" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+
+	</Gift>
+	<Gift id="1004073">
+		<!-- 通告拉克丝好感度4级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600110" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004074">
+		<!-- 通告拉克丝好感度5级奖励【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600109" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004075">
+		<!-- 通告威廉好感度1级礼包【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004076">
+		<!-- 通告劳伦特好感度1级礼包【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004077">
+		<!-- 通告达伦好感度1级礼包【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200001" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004078">
+		<!-- 通告阿塞尔好感度1级礼包【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200005" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200002" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1004079">
+		<!-- 通告拉克丝好感度1级礼包【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="960200003" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960200004" min_num = "20" max_num = "20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+
+	<Gift id="1005001">
+		<!-- 竞技场奖励占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "1" max_num = "1" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1005002">
+		<!-- 竞技场奖励占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "500" max_num = "500" weight="0" is_show="1" is_fixed="1"/>
+			<reward type="item" boy_id="0" girl_id="950300002" min_num = "2" max_num = "2" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1005003">
+		<!-- 竞技场奖励占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "800" max_num = "800" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006001">
+		<!-- 主线章节奖励1-1占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001028301" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1008029801" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006025801" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006002">
+		<!-- 主线章节奖励1-3占用【CBT版本】-->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "10000" max_num ="10000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006003">
+		<!-- 主线章节奖励1-5占用【CBT版本】-->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "20000" max_num ="20000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006004">
+		<!-- 主线章节奖励2-2占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001006602" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006005">
+		<!-- 主线章节奖励2-4占用【CBT版本】-->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "30000" max_num ="30000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006006">
+		<!-- 主线章节奖励2-6占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1006034901" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006007">
+		<!-- 主线章节奖励2-8占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1008024501" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num ="1000" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006008">
+		<!-- 主线章节奖励3-3占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600001" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006009">
+		<!-- 主线章节奖励3-6占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600003" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006010">
+		<!-- 主线章节奖励3-8占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600002" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006011">
+		<!-- 主线章节奖励4-2占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600287" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006012">
+		<!-- 主线章节奖励4-4占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600289" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="920600290" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006013">
+		<!-- 主线章节奖励4-6占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600291" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="920600292" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006014">
+		<!-- 主线章节奖励4-8占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="920600288" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "800" max_num ="800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006015">
+		<!-- 主线章节奖励5-2占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001001701" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006016">
+		<!-- 主线章节奖励5-4占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1009000701" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006017">
+		<!-- 主线章节奖励5-6占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1013000601" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "800" max_num ="800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006018">
+		<!-- 主线章节奖励5-9占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1008001201" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1200" max_num ="1200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006019">
+		<!-- 主线章节奖励6-2占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1001088901" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006020">
+		<!-- 主线章节奖励6-3占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1006082101" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006021">
+		<!-- 主线章节奖励6-5占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1012043101" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "800" max_num ="800" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1006022">
+		<!-- 主线章节奖励6-7占用【CBT版本】-->
+		<reward type="item" boy_id="0" girl_id="1008099701" min_num = "1" max_num ="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1200" max_num ="1200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007001">
+		<!-- 主线1-1首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008079701" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006087501" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007002">
+		<!-- 主线1-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="50" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007003">
+		<!-- 主线1-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007004">
+		<!-- 主线1-2首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001040001" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006053701" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007005">
+		<!-- 主线1-2完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007006">
+		<!-- 主线1-2普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007007">
+		<!-- 主线1-3首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008056501" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1002001701" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1003020901" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1001051502" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006019902" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007008">
+		<!-- 主线1-3完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007009">
+		<!-- 主线1-3普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007010">
+		<!-- 主线1-4首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001015902" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1002015401" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1003003101" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="1006058802" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007011">
+		<!-- 主线1-4完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="50" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007012">
+		<!-- 主线1-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007013">
+		<!-- 主线1-5首通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num="3000" max_num="3000" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007014">
+		<!-- 主线1-5完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="40" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007015">
+		<!-- 主线1-5普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007016">
+		<!-- 主线2-1首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007017">
+		<!-- 主线2-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007018">
+		<!-- 主线2-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007019">
+		<!-- 主线2-2首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007020">
+		<!-- 主线2-2完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007021">
+		<!-- 主线2-2普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007022">
+		<!-- 主线2-4首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008018502" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007023">
+		<!-- 主线2-4完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007024">
+		<!-- 主线2-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007025">
+		<!-- 主线2-5首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007026">
+		<!-- 主线2-5完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007027">
+		<!-- 主线2-5普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007028">
+		<!-- 主线2-6首通【CBT版本】 -->
+        <reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "26" max_num = "26" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007029">
+		<!-- 主线2-6完美【CBT版本】 -->
+	    <reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007030">
+		<!-- 主线2-6普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007031">
+		<!-- 主线2-7首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007032">
+		<!-- 主线2-7完美【CBT版本】 -->
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="30" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007033">
+		<!-- 主线2-7普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007034">
+		<!-- 主线2-8首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "56" max_num = "56" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007035">
+		<!-- 主线2-8完美【CBT版本】 -->
+	<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007036">
+		<!-- 主线2-8普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007037">
+		<!-- 主线2-10首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "66" max_num = "66" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007038">
+		<!-- 主线2-10完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007039">
+		<!-- 主线2-10普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007040">
+		<!-- 主线3-1首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "90" max_num = "90" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007041">
+		<!-- 主线3-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007042">
+		<!-- 主线3-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007043">
+		<!-- 主线3-3首通【CBT版本】 -->
+
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "108" max_num = "108" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007044">
+		<!-- 主线3-3完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num="2" max_num="2" weight="50" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num = "100" weight="50" is_show="0"/>
+	</Gift>
+	<Gift id="1007045">
+		<!-- 主线3-3普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007046">
+		<!-- 主线3-4首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600014" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960100002" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007047">
+		<!-- 主线3-4完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100002" min_num = "2" max_num = "2" weight="60" is_show="1" />
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="40" is_show="0" />
+	</Gift>
+	<Gift id="1007048">
+		<!-- 主线3-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007049">
+		<!-- 主线3-5首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007050">
+		<!-- 主线3-5完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100001" min_num = "2" max_num = "2" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007051">
+		<!-- 主线3-5普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007052">
+		<!-- 主线3-7首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100003" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007053">
+		<!-- 主线3-7完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100003" min_num = "2" max_num = "2" weight="70" is_show="1"/>
+	<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="30" is_show="0" />
+	</Gift>
+	<Gift id="1007054">
+		<!-- 主线3-7普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007055">
+		<!-- 主线3-8首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600230" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007056">
+		<!-- 主线3-8完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007057">
+		<!-- 主线3-8普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007058">
+		<!-- 主线3-9首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007059">
+		<!-- 主线3-9完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num = "2" max_num = "2" weight="70" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="30" is_show="0" />
+	</Gift>
+	<Gift id="1007060">
+		<!-- 主线3-9普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007061">
+		<!-- 主线3-10首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num ="200" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "3000" max_num="3000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007062">
+		<!-- 主线3-10完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num = "2" max_num = "2" weight="70" is_show="1"/>
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="30" is_show="0" />
+	</Gift>
+	<Gift id="1007063">
+		<!-- 主线3-10普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007064">
+		<!-- 主线4-1首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007065">
+		<!-- 主线4-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007066">
+		<!-- 主线4-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007067">
+		<!-- 主线4-2首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num="10" max_num="10" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num ="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007068">
+		<!-- 主线4-2完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num = "2" max_num = "2" weight="80" is_show="1"/>
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="20" is_show="0" />
+	</Gift>
+	<Gift id="1007069">
+		<!-- 主线4-2普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007070">
+		<!-- 主线4-3首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600310" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007071">
+		<!-- 主线4-3完美【CBT版本】 -->
+	    <reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007072">
+		<!-- 主线4-3普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007073">
+		<!-- 主线4-4首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "100" max_num = "100" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007074">
+		<!-- 主线4-4完美【CBT版本】 -->
+		    <reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007075">
+		<!-- 主线4-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007076">
+		<!-- 主线4-6首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007077">
+		<!-- 主线4-6完美【CBT版本】 -->
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007078">
+		<!-- 主线4-6普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007079">
+		<!-- 主线4-7首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100002" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007080">
+		<!-- 主线4-7完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100002" min_num = "3" max_num = "3" weight="70" is_show="1"/>
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="30" is_show="0" />
+	</Gift>
+	<Gift id="1007081">
+		<!-- 主线4-7普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007082">
+		<!-- 主线4-9首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "100" max_num = "100" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007083">
+		<!-- 主线4-9完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007084">
+		<!-- 主线4-9普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007085">
+		<!-- 主线4-10首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100003" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num ="300" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007086">
+		<!-- 主线4-10完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100003" min_num = "3" max_num = "3" weight="80" is_show="1"/>
+		 <reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="20" is_show="0" />
+	</Gift>
+	<Gift id="1007087">
+		<!-- 主线4-10普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007088">
+		<!-- 主线5-1首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007089">
+		<!-- 主线5-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007090">
+		<!-- 主线5-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007091">
+		<!-- 主线5-2首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007092">
+		<!-- 主线5-2完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007093">
+		<!-- 主线5-2普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007094">
+		<!-- 主线5-3首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600311" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960100004" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007095">
+		<!-- 主线5-3完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num = "3" max_num = "3" weight="80" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num = "100" weight="20" is_show="0"/>
+	</Gift>
+	<Gift id="1007096">
+		<!-- 主线5-3普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007097">
+		<!-- 主线5-4首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007098">
+		<!-- 主线5-4完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007099">
+		<!-- 主线5-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007100">
+		<!-- 主线5-5首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600312" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "100" max_num = "100" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007101">
+		<!-- 主线5-5完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007102">
+		<!-- 主线5-5普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007103">
+		<!-- 主线5-7首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007104">
+		<!-- 主线5-7完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num = "3" max_num = "3" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007105">
+		<!-- 主线5-7普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007106">
+		<!-- 主线5-8首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007107">
+		<!-- 主线5-8完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007108">
+		<!-- 主线5-8普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007109">
+		<!-- 主线5-9首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600020" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007110">
+		<!-- 主线5-9完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007111">
+		<!-- 主线5-9普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007112">
+		<!-- 主线5-10首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100001" min_num="30" max_num="30" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num ="400" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007113">
+		<!-- 主线5-10完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100001" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007114">
+		<!-- 主线5-10普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007115">
+		<!-- 主线6-1首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600313" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007116">
+		<!-- 主线6-1完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007117">
+		<!-- 主线6-1普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007118">
+		<!-- 主线6-3首通【CBT版本】 -->
+
+		<reward type="item" boy_id="0" girl_id="960100002" min_num="20" max_num="20" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007119">
+		<!-- 主线6-3完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100002" min_num = "4" max_num = "4" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007120">
+		<!-- 主线6-3普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007121">
+		<!-- 主线6-4首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007122">
+		<!-- 主线6-4完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007123">
+		<!-- 主线6-4普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007124">
+		<!-- 主线6-5首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600314" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960100003" min_num="30" max_num="30" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007125">
+		<!-- 主线6-5完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100003" min_num = "4" max_num = "4" weight="50" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007126">
+		<!-- 主线6-5普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007127">
+		<!-- 主线6-7首通【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007128">
+		<!-- 主线6-7完美【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "300" max_num = "300" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007129">
+		<!-- 主线6-7普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007130">
+		<!-- 主线6-8首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920600315" min_num="1" max_num="1" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="item" boy_id="0" girl_id="960100004" min_num="30" max_num="30" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007131">
+		<!-- 主线6-8完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100004" min_num = "4" max_num = "4" weight="50" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007132">
+		<!-- 主线6-8普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007133">
+		<!-- 主线6-10首通【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num="40" max_num="40" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num ="500" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "5000" max_num="5000" weight="0" is_show="0" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="0" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007134">
+		<!-- 主线6-10完美【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="960100005" min_num = "4" max_num = "4" weight="50" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1007135">
+		<!-- 主线6-10普通【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1" is_fixed="1"/>
+		<reward type="experience" boy_id="0" girl_id="0" min_num = "6" max_num = "6" weight="0" is_show="1" is_fixed="1"/>
+	</Gift>
+	<Gift id="1008001">
+		<!-- 日活跃度礼包-1【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "50" max_num="50" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008002">
+		<!-- 日活跃度礼包-2【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "60" max_num="60" weight="0" is_show="1"/>
+
+	</Gift>
+	<Gift id="1008003">
+		<!-- 日活跃度礼包-3【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1"/>
+
+	</Gift>
+	<Gift id="1008004">
+		<!-- 日活跃度礼包-4【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "150" max_num="150" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="920200008" min_num = "3" max_num = "3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008005">
+		<!-- 日活跃度礼包-5【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1"/>
+
+	</Gift>
+	<Gift id="1008006">
+		<!-- 周活跃度宝箱-1【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="927400001" min_num = "3" max_num = "3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008007">
+		<!-- 周活跃度宝箱-2【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num="500" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="927400001" min_num = "5" max_num = "5" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008008">
+		<!-- 周活跃度宝箱-3【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "800" max_num="800" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="927400001" min_num = "8" max_num = "8" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="920200009" min_num = "3" max_num = "3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008009">
+		<!-- 成长任务等级礼包-1【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008010">
+		<!-- 成长任务等级礼包-2【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008011">
+		<!-- 成长任务等级礼包-3【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008013">
+		<!-- 成长任务等级礼包-5【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008014">
+		<!-- 成长任务等级礼包-6【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008015">
+		<!-- 成长任务等级礼包-7【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008016">
+		<!-- 成长任务等级礼包-8【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008017">
+		<!-- 成长任务等级礼包-9【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008018">
+		<!-- 成长任务特殊任务礼包-1【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008019">
+		<!-- 活跃度任务奖励-1【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "5" max_num="5" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "999999" max_num="999999" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008020">
+		<!-- 活跃度任务奖励-2【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008021">
+		<!-- 活跃度任务奖励-3【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "15" max_num="15" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008022">
+		<!-- 活跃度任务奖励-4【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "200" max_num="200" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008023">
+		<!-- 活跃度任务奖励-5【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "15" max_num="15" weight="0" is_show="1"/>
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008024">
+		<!-- 活跃度任务奖励-6【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "15" max_num="15" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "100" max_num="100" weight="0" is_show="1"/>
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008025">
+		<!-- 成长任务奖励-1【CBT版本】 -->
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008026">
+		<!-- 成长任务奖励-2【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "150" max_num="150" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008027">
+		<!-- 成长任务奖励-3【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008028">
+		<!-- 成长任务奖励-4【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000016" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008029">
+		<!-- 成长任务奖励-5【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000016" min_num = "2" max_num="2" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008030">
+		<!-- 成长任务奖励-6【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000016" min_num = "3" max_num="3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008031">
+		<!-- 成长任务奖励-7【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008032">
+		<!-- 成长任务奖励-8【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "3" max_num="3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008033">
+		<!-- 成长任务奖励-9【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008034">
+		<!-- 成长任务奖励-10【CBT版本】 -->
+		<reward type="elect_coin" boy_id="0" girl_id="0" min_num = "200" max_num="200" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008035">
+		<!-- 成长任务奖励-11【CBT版本】 -->
+		<reward type="elect_coin" boy_id="0" girl_id="0" min_num = "300" max_num="300" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008036">
+		<!-- 成长任务奖励-12【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="950300002" min_num = "3" max_num="3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008037">
+		<!-- 成长任务奖励-13【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="927400001" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008038">
+		<!-- 成长任务奖励-14【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920000015" min_num = "500" max_num="500" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008039">
+		<!-- 成长任务奖励-15【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="920200010" min_num = "3" max_num="3" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008040">
+		<!-- 成长任务奖励-16【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="925000001" min_num = "5" max_num="5" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008041">
+		<!-- 成长任务奖励-17【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="950300001" min_num = "5" max_num="5" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008042">
+		<!-- 成长任务链任务-1-1【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1001001701" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008043">
+		<!-- 成长任务链任务-1-2【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1009000701" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008044">
+		<!-- 成长任务链任务-1-3【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1013000601" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008045">
+		<!-- 成长任务链任务-2-1【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="1008001201" min_num = "1" max_num="1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008046">
+		<!-- 成长任务链任务-1礼包【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008047">
+		<!-- 成长任务链任务-2礼包【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1008048">
+		<!-- 活跃度任务奖励-7【CBT版本】 -->
+		<reward type="vitality" boy_id="0" girl_id="0" min_num = "5" max_num="5" weight="0" is_show="1"/>
+		<reward type="elect_coin" boy_id="0" girl_id="0" min_num = "100" max_num="100" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1009001">
+		<!-- 图鉴收集奖励【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "200" max_num = "200" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009002">
+		<!-- 图鉴收集奖励【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "400" max_num = "400" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009003">
+		<!-- 图鉴收集奖励【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "600" max_num = "600" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009004">
+		<!-- 单个图鉴收集奖励3星【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "500" max_num = "500" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009005">
+		<!-- 单个图鉴收集奖励4星【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "800" max_num = "800" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009006">
+		<!-- 单个图鉴收集奖励4星【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "2000" max_num = "2000" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1009007">
+		<!-- 图鉴收集奖励【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1010001">
+		<!-- 社区跑环任务【CBT版本】 -->
+		<reward type="item" boy_id="0" girl_id="927400001" min_num = "1" max_num = "1" weight="0" is_show="1"/>
+	</Gift>
+	<Gift id="1010002">
+		<!-- 问卷调查【CBT版本】 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="50" is_show="1"/>
+	</Gift>
+	<Gift id="1011001">
+		<!-- 成就测试奖励 -->
+		<reward type="ticket" boy_id="0" girl_id="0" min_num = "1000" max_num = "1000" weight="0" is_show="1"/>
+		<reward type="gb" boy_id="0" girl_id="0" min_num = "1000" max_num="1000" weight="0" is_show="1"/>
+		<reward type="achievement" boy_id="0" girl_id="0" min_num = "10" max_num="10" weight="0" is_show="1"/>
+	</Gift>
+</GiftList>
