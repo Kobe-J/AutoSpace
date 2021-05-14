@@ -2,17 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Chapter_Testng_Explanatorybasis" />
         <module name="Chapter_Interface_automation" />
-        <module name="Chapter_AutoSpace" />
-        <module name="Chapter_Testng_ExtentReport" />
         <module name="Chapter_SpringBoot" />
-        <module name="Chapter_Springboot_Mybatis" />
+        <module name="Chapter_Testng_Explanatorybasis" />
         <module name="Chapter_Testng_HttpClient" />
+        <module name="Chapter_Testng_ExtentReport" />
+        <module name="Chapter_AutoSpace" />
+        <module name="Chapter_Springboot_Mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

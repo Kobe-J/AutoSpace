@@ -104,11 +104,12 @@ public class ExtentTestNGIReporterListener implements IReporter {
     private void init() {
         //文件夹不存在的话进行创建
         File reportDir= new File(OUTPUT_FOLDER);
-        if(!reportDir.exists()&& !reportDir .isDirectory()){
+        if(!reportDir.exists()&& !reportDir.isDirectory()){
             reportDir.mkdir();
         }
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
         // 设置静态文件的DNS
+
         //解决cdn.rawgit.com访问不了的情况
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
 
@@ -138,6 +139,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
 
         if (tests.size() > 0) {
             //调整用例排序，按时间排序
+
             Set<ITestResult> treeSet = new TreeSet<ITestResult>(new Comparator<ITestResult>() {
                 @Override
                 public int compare(ITestResult o1, ITestResult o2) {
