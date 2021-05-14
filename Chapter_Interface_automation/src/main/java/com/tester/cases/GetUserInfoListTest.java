@@ -45,9 +45,9 @@ public class GetUserInfoListTest {
         JSONArray userListJson = new JSONArray(userList);
 
         Assert.assertEquals(userListJson.length(),resultJson.length());
-        for(int i = 0;i<resultJson.length();i++){
-            JSONObject expect = (JSONObject) resultJson.get(i);
-            JSONObject actual = (JSONObject) userListJson.get(i);
+        for(int a = 0;a<resultJson.length();a++){
+            JSONObject expect = (JSONObject) resultJson.get(a);
+            JSONObject actual = (JSONObject) userListJson.get(a);
             Assert.assertEquals(expect.toString(), actual.toString());
         }
 
