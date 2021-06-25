@@ -8,10 +8,10 @@
             <class name="com.tester.cases.LoginTest">
                 <methods>
                     <include name="loginTrue"/>
-                    <include name="loginFalse"/>
+                    <!--<include name="loginFalse"/>-->
                 </methods>
             </class>
-            <class name="com.tester.cases.AddUserTest">
+            <!--<class name="com.tester.cases.AddUserTest">
                 <methods>
                     <include name="addUser"/>
                 </methods>
@@ -32,7 +32,7 @@
                 <methods>
                     <include name="getUserListInfo"/>
                 </methods>
-            </class>
+            </class>-->
         </classes>
 
 

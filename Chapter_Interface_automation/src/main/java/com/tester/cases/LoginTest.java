@@ -64,7 +64,7 @@ public class LoginTest {
         //接口的测试代码
         String result = getResult(loginCase);
         //处理结果，判断返回结果是否符合预期
-        Assert.assertEquals(loginCase.getExpected(),"true");
+        Assert.assertEquals(loginCase.getExpected(),"false");
     }
 
 
